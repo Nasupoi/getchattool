@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8"/>
+   <title>なすぽーいポイポイツール</title>
+	<link rel="stylesheet" href="./css/readme.css">
+</head>
+<body>
+	<header class="topNavigation">
+		<div>Get YouTube Live Chat</div>
+		<a onClick="window.close();"><img id="close_icon" src="./img/close.png"></a>
+	</header>
+	<div class="content">
+		<h1>Read me</h1>
+		<h2>What this tool</h2>
+		<div class="inp" id="samari">
+ 　			<span>このツールはYouTubeのライブ配信のチャット欄からある条件に合致したコメントをリアルタイムに抽出する事ができます。</span><br>
+ 　			<span>また抽出したコメントから1つをランダムに抽選することができます。</span><br><br>
+ 　			<span>○　動作確認環境</span>
+			<ul>
+				<li>OS<br>Windows10(CPU:4コア、メモリ:16GB)</li><br>
+				<li>ブラウザ<br>Chrome</li>
+　			</ul>
+		</div>
+ 
+		<h2>Using Setting</h2>
+		<div class="inp" id="for_user">
+ 　		<div>このツールを使うためには以下の情報が必要です。</div>
+		<ol>
+			<li>YouTube Data API v3を利用するためのAPIキー<br>
+				Google Cloud Platformから取得してください。
+			</li><br>
+			<li>配信中のYouTube　LiveのURL</li>
+　		</ol>
+ 　		<div>○　Settingの各項目の説明</div>
+			<ul>
+				<li>API key<br>
+					YouTube Data API v3を利用するためのAPIキーを入力してください。
+				</li><br>
+				<li>Live URL<br>
+					配信中のYouTube　LiveのURLを入力してください。
+				</li><br>
+				<li>Max multiple comments<br>
+					同一ユーザの複数コメントについて、表示させる最大件数を入力してください。<br>
+					入力しない場合は最大件数は設定されません。<br>
+					この項目はコメントの受付上限数等に利用できます。
+				</li><br>
+				<li>Get comments interval(sec)<br>
+					コメントの取得間隔を入力してください。<br>
+					この項目は5秒以上の範囲で入力可能です。<br>
+					入力しない場合は5秒間隔で取得します。
+				</li>
+	　		</ul>
+		</div>
+ 
+		<h2>Using Chat</h2>
+		<div class="inp" id="for_visiter">
+ 　			<div>ある条件に合致したコメントをリアルタイムに表示します。</div>
+ 　			<div>○ 表示されるコメントの条件</div>
+			<ol>
+				<li>【○○○-○○○-○○○】：ハイフン区切り<br>○部分は半角英数字のみ有効です。<br>マリオメーカーのコースIDを投稿してもらうことを想定しています。<br>
+				この形の前後にコメントを付けた場合、表示はできません。<br>
+				【OK】 6G7-DS2-NB6<br>
+				【NG】 6G7-DS2-NB6でお願いします<br>
+				【NG】 こちらがコースIDです→6G7-DS2-NB6<br></li><br>
+				<li>【○○○ ○○○ ○○○】：半角スペース区切り<br>○部分は半角英数字のみ有効です。<br>マリオメーカーのコースIDを投稿してもらうことを想定しています。<br>
+				この形の前後にコメントを付けた場合、表示はできません。<br>
+				【OK】 6G7　DS2　NB6<br>
+				【NG】 6G7　DS2　NB6でお願いします<br>
+				【NG】 こちらがコースIDです→6G7　DS2　NB6<br></li><br>
+			</ol>
+			<div>○ 表示されたコメントの修正</div><br>
+			<div>　　チャットの「Num」欄をもとに以下とおり入力することで、投稿されたコメントを修正することができます。</div>
+			<div>　　　[チャットの「Num」欄の数字]：[「○ 表示されるコメントの条件」記載のコメント形式]</div>
+			<div>　　　【例】：自分の投稿したコメントの「Num」欄の数字が4の場合<br>　　　4:6G7-DS2-NB6</div>
+		</div>
+
+ <h2>Using Drowing</h2>
+ <div class="inp" id="for_visiter">
+	<div>Drow Chatボタンを押すことでChatからランダムに1つ抽選することができます。<br>
+		また「with play time」にチェックを入れることで「15～60分」の中からランダムでプレイ時間が選択されます。<br>
+		Chatの「Played」欄のチェックボックスにチェックをいれたコメントは抽選対象外となります。
+	</div>
+ </div>
+ 
+ <h2>Infomation</h2>
+ <div class="inp" id="for_visiter">
+	このツールについて、バグ報告や質問、改善要望がございましたら、<br>
+	TwitterのDMにて、お受けいたします。
+	</div>
+ </div>
+ 
+</div>
+<footer class="footer">
+	<span id="ft_span">
+		<span>Build by Nasupoi</span>
+		<a id="youtueb_icon" href="https://www.youtube.com/channel/UCDHf6gE8v124qz_6j2c5H3A/featured" target=”_blank”><img src="./img/yt_icon_rgb.png"></a>
+		<a id="twitter_icon" href="https://twitter.com/nasunasu_poipoi" target=”_blank”><img src="./img/2021 Twitter logo - blue.png"></a>
+	</span>
+</footer>
+</body>

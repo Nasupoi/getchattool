@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+	font-family: "メイリオ";
+	overflow-x: hidden;
+}
+.topNavigation{
+	font-size: 20px;
+    height: 80px;
+    background-color: #2f2849;
+	color: #FFFFFF;
+}
+.content{
+    flex: 1;
+    background: rgb(0,0,0);
+    margin: 2px 0 2px 0;
+}
+.footer{
+    height: 50px;
+    position: relative;
+    background-color: #2f2849;
+	color: #FFFFFF;
+}
+
+#close_icon {
+  width: 150px;
+  margin: 0px 0px 0px 20px;
+  background: transparent;/*背景透明に*/
+  border: transparent;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 10px 0px 0px 30px;
+  color: #FFFFFF;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #f06725;/*左線*/
+}
+
+h2{
+  font-size: 18px;
+  margin: 20px 0px 0px 50px;
+  color: #FFFFFF;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #006400;/*左線*/
+}
+
+.inp{
+	color: #FFFFFF;
+	font-size: 15px;
+	margin: 0px 0px 0px 70px;
+}
+#youtueb_icon img{
+	width: 20px;
+}
+
+#twitter_icon img{
+	width: 20px;
+}
+
+#ft_span{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

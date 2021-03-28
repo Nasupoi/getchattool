@@ -1,0 +1,311 @@
+body{
+    display: flex;
+    flex-direction: column;
+	font-family: "メイリオ";
+	overflow-x: hidden;
+}
+.header{
+	font-size: 20px;
+    height: 80px;
+    background-color: #2f2849;
+	color: #FFFFFF;
+}
+#read_me_icon {
+  width: 150px;
+  margin: 0px 0px 0px 20px;
+  background: transparent;/*背景透明に*/
+  border: transparent;
+}
+
+.glovalNavigation{
+    height: 250px;
+    #text-align: center;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(29,0,55,1) 29%, rgba(160,108,208,0.6018518518518519) 100%);
+	color: #fff;
+	margin: 2px 0 0 0;
+}
+main{
+    display: flex;
+    min-height: 50vh;
+    margin: 5px 0 2px 0;
+}
+.content{
+    flex: 1;
+    background: rgb(0,0,0);
+    margin-right: 5px;
+	width: 700px;
+	height: 560px;
+}
+
+#view_courseId{
+	overflow-y: scroll;
+	margin: 10px 0 0 0;
+	height: 450px;
+}
+
+.localNavigation{
+	background: rgb(26,84,124);
+	background: linear-gradient(90deg, rgba(26,84,124,1) 50%, rgba(115,166,200,1) 100%);
+    color: #fff;
+    width: 500px;
+	height: 560px;
+}
+.footer{
+    height: 50px;
+    position: relative;
+    background-color: #2f2849;
+	color: #FFFFFF;
+}
+
+#setting_table{
+  margin: 10px 30px 10px 30px;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+#setting_table tr{
+  border-bottom: solid 2px white;
+}
+
+#setting_table tr:last-child{
+  border-bottom: none;
+}
+
+.fixed01{
+  position: sticky;
+  top: 0;
+  color: #fff;
+  background: #333;
+  &:before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+  }
+}
+
+#setting_table th{
+  font-size: 10px;
+  position: relative;
+  text-align: left;
+  background: rgb(244,76,3);
+  background: linear-gradient(90deg, rgba(244,76,3,1) 0%, rgba(240,103,37,1) 42%, rgba(241,155,100,0.9976851851851852) 100%);
+  color: white;
+  text-align: center;
+  width: 5%;
+  padding: 5px 5px;
+}
+
+#setting_table td{
+  font-size: 10px;
+  background-color: #eee;
+  width: 30%;
+  padding: 5px 5px;
+}
+.settings{
+  width: 80%;
+  font-size: 15px;
+}
+
+.settings:focus {
+    border: 2px solid #ff9900; 
+    z-index: 10;
+    outline: 0;
+}
+#error{
+  margin: 0px 0px 0px 30px;
+  width: 500%;
+  font-size: 15px;
+  color: #FF0000;
+}
+#button_area{
+  width: 100%;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 10px 0px 0px 30px;
+  color: #FFFFFF;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #f06725;/*左線*/
+}
+
+#get_button img{
+  width: 100%;
+  background: transparent;/*背景透明に*/
+}
+
+#get_button {
+  width: 150px;
+  margin: 0px 0px 0px 20px;
+  background: transparent;/*背景透明に*/
+  border: transparent;
+}
+
+#stop_button img{
+  width: 100%;
+  background: transparent;/*背景透明に*/
+}
+
+#stop_button {
+  width: 150px;
+   margin: 0px 0px 0px 20px;
+  background: transparent;/*背景透明に*/
+  border: transparent;
+}
+
+input[type="text"][disabled]{
+    background:#DCDCDC;
+    cursor:not-allowed; /* 禁止カーソル */
+}
+
+input[type="password"][disabled]{
+    background:#DCDCDC;
+    cursor:not-allowed; /* 禁止カーソル */
+}
+
+input[type="number"][disabled]{
+    background:#DCDCDC;
+    cursor:not-allowed; /* 禁止カーソル */
+}
+
+button[type="button"][disabled]{
+    filter:grayscale(50%);
+}
+
+.help_icon img {
+	width: 20px;
+	margin: 0px 0px 0px 0px;
+}
+
+.error_icon{
+	width: 20px;
+	margin: 10px 0px 0px 0px;
+	display: none;
+}
+
+.help_icon:hover{
+	filter:invert(30%);
+}
+.help_icon:hover .word{
+	display: block; 
+}
+.help_icon:hover .word_chat{
+	display: inline; 
+}
+.word {
+  display: none;
+  width: 300px;
+  position: absolute;
+  padding: 16px;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.8);
+  color: #ffffff;
+  font-size: 70%;
+}
+.word_chat {
+  display: none;
+  width: 300px;
+  position: absolute;
+  padding: 16px;
+  border-radius: 5px;
+  background: rgba(0,0,0,0.8);
+  color: #ffffff;
+  font-size: 70%;
+}
+#courseId_table{
+　　width: 100%;
+  font-size: 15px;
+  border-collapse:collapse;
+  margin: 10px 30px 30px 10px;
+}
+#courseId_table td,th{
+  padding:10px;
+  font-size: 15px;
+}
+#courseId_table th{
+  color:#fff;
+  background: rgb(244,76,3);
+  background: linear-gradient(90deg, rgba(244,76,3,1) 0%, rgba(240,103,37,1) 42%, rgba(241,155,100,0.9976851851851852) 100%);
+}
+#courseId_table td{
+  color:#fff;
+}
+
+.user_icon {
+	width: 30px;
+	border-radius: 50%;
+	vertical-align:middle;
+}
+
+.chat_button img{ 
+  width: 100%;
+  background: transparent;/*背景透明に*/
+}
+
+.chat_button {
+  margin: 10px 0px 0px 20px;
+  width: 150px;
+  background: transparent;/*背景透明に*/
+  border: transparent;
+}
+
+.drow_button img{ 
+  width: 100%;
+  background: transparent;/*背景透明に*/
+}
+
+.drow_button {
+  text-align:center;
+  margin: 20px 0px 0px 20px;
+  width: 300px;
+  background: transparent;/*背景透明に*/
+  border: transparent;
+}
+
+#play_time_flg{
+  margin: 0px 0px 0px 30px;
+}
+
+#view_result{
+	margin: 50px 0px 0px 50px;
+}
+
+#user_info img{
+	text-align:center;
+	width: 70px;
+}
+
+#user_info{
+	margin: 0px 0px 10px 30px;
+	font-size: 30px;
+}
+
+#chat_info{
+	margin: 0px 0px 10px 30px;
+	font-size: 30px;
+}
+
+#play_time{
+	margin: 0px 0px 10px 30px;
+}
+
+#youtueb_icon img{
+	width: 20px;
+}
+
+#twitter_icon img{
+	width: 20px;
+}
+
+#ft_span{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
