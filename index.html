@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+	   <meta charset="utf-8"/>
+	   <title>なすぽーいポイポイツール</title>
+		<link rel="stylesheet" href="./css/choose.css">
+	</head>
+
+	<body>
+		<header class="header">
+		   <div>Get YouTube Live Chat</div>
+		   <a href="./readme.html" target=”_blank”><img id="read_me_icon" src="./img/readme.png"></a>
+		</header>
+		<div class="glovalNavigation">
+		    <h1>Settings</h1>
+			<div id="user_settings">
+			    <table id="setting_table">
+					<tr>
+						<th>API key</th>
+						<td>
+						    <img src="./img/error.png" class="error_icon" id="api_key_error_img">
+							<input type="password" id="api_key" class="settings necessary ef">
+							<span  class="help_icon">
+								<img src="./img/help.png">
+								<span class="word">YouTube Data API v3を利用するためのAPIキーを入力してください。</span>
+							</span>
+						</td>
+						<th>Max multiple comments</th>
+						<td>
+							<img src="./img/error.png" class="error_icon" id="max_comment_num_error_img">
+							<input type="number" id="max_comment_num" class="settings ef">
+							<span  class="help_icon">
+								<img src="./img/help.png">
+								<span class="word">同一ユーザの複数コメントについて、表示する最大件数を設定したい場合は数値を入力してください。</span>
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th>Live URL</th>
+						<td>
+							<img src="./img/error.png" class="error_icon" id="videoId_error_img">
+							<input type="text" id="videoId" class="settings necessary ef" placeholder="https://www.youtube.com/watch?v=">
+							<span  class="help_icon">
+								<img src="./img/help.png">
+								<span class="word">コメントを抽出する対象となるYouTube LiveのURLを入力してください。</span>
+							</span>
+						</td>
+						<th>Get comments interval(sec)</th>
+						<td>
+							<img src="./img/error.png" class="error_icon" id="get_term_error_img">
+							<input type="number" id="get_term" class="settings ef">
+							<span  class="help_icon">
+								<img src="./img/help.png">
+								<span class="word">コメント取得間隔を5秒以上から入力してください。何も入力しない場合は5秒ごとに取得します。</span>
+							</span>
+						</td>
+					</tr>
+				</table>
+				<div id="button_area"></div>
+				<h2 id="error"></h2>
+			</div>
+		</div>
+		<main>
+			<div class="content">
+				<h1>Chat</h1>
+				<div id="view_courseId">
+					<table id="courseId_table">
+						<tr>
+							<th class="fixed01">Num</th>
+							<th class="fixed01">User Name</th>
+							<th class="fixed01">CourseID</th>
+							<th class="fixed01">Played</th>
+						</tr>
+					</table>
+				</div>
+				<span id="courseId_bottun_area">
+					<button type="button" class="chat_button" onclick="clearCourseID(true)"><img id="clear_check" src="./img/clear_check.png"></button>
+					<span  class="help_icon">
+								<img src="./img/help.png">
+								<span class="word_chat">チェックボックスにチェックを付けた項目のみ非表示になります。</span>
+					</span>
+					<button type="button" class="chat_button" id="clear_table" onclick="clearCourseID(false)"><img id="clear_check" src="./img/clear_table.png"></button>
+					<span  class="help_icon">
+								<img src="./img/help.png">
+								<span class="word_chat">取得したコメント情報をすべて非表示にします。</span>
+					</span>
+				</span>	
+			</div>	
+			
+			<div class="localNavigation">
+			<h1>Drowing</h1>
+				<div id="choose_courseId">
+					<div>
+						<button type="button" class="drow_button" onclick="viewResult()"><img id="clear_check" src="./img/DrowChat.png"></button>
+					<span  class="help_icon">
+						<img src="./img/help.png">
+						<span class="word">取得したコメント情報からランダムで1つ抽選します。</span>
+					</span>
+					</div>
+					<input type="checkbox" id="play_time_flg">with play time</input>
+				</div>
+				
+				<div id="view_result">
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<span id="ft_span">
+				<span>Build by Nasupoi</span>
+				<a id="youtueb_icon" href="https://www.youtube.com/channel/UCDHf6gE8v124qz_6j2c5H3A/featured" target=”_blank”><img src="./img/yt_icon_rgb.png"></a>
+				<a id="twitter_icon" href="https://twitter.com/nasunasu_poipoi" target=”_blank”><img src="./img/2021 Twitter logo - blue.png"></a>
+			</span>
+		</footer>
+		<script src="./js/chooseId.js"></script>
+	</body>
+</html>
